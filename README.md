@@ -9,6 +9,14 @@ AI-powered EV route optimization for urban FMCG delivery in Ho Chi Minh City.
 This project was built to challenge a common assumption in logistics: _green operations are expensive_.  
 Our team designed an end-to-end decision system that combines demand forecasting, geospatial infrastructure modeling, and EV routing optimization. The outcome shows that sustainability and profitability can move together when decisions are data-driven.
 
+### Award Evidence
+
+- Official post: https://www.facebook.com/share/p/1PfdwTtG6q/
+
+| Receiving Award - Photo 1                               | Receiving Award - Photo 2                                 |
+| ------------------------------------------------------- | --------------------------------------------------------- |
+| ![Receiving Award 1](github-assets/receiving-award.jpg) | ![Receiving Award 2](github-assets/receiving-award-2.png) |
+
 ## Why This Project Matters
 
 - Vietnam has made strong climate commitments (Net Zero direction by 2050).
@@ -61,23 +69,19 @@ From repository output artifacts:
 - `optimized_routes_final.json` contains **47 optimized trips**.
 - Total planned distance in exported schedule: **683.76 km**.
 
-### Award Evidence
-
-- Official post: https://www.facebook.com/share/p/1PfdwTtG6q/
-
-| Receiving Award - Photo 1 | Receiving Award - Photo 2 |
-| --- | --- |
-| ![Receiving Award 1](github-assets/receiving-award.jpg) | ![Receiving Award 2](github-assets/receiving-award-2.png) |
-
 ### Product Snapshots
 
-| Control Tower UI                             | Cost & Emission Panel                             |
-| -------------------------------------------- | ------------------------------------------------- |
-| ![Control Tower UI](github-assets/demo1.png) | ![Cost and Emission KPI](github-assets/demo4.png) |
+**Control Tower UI**
 
-| Route Simulation Map                         | Battery Health Trend                       |
-| -------------------------------------------- | ------------------------------------------ |
-| ![Route Simulation](github-assets/demo2.png) | ![Battery Health](github-assets/demo3.png) |
+![Control Tower UI](github-assets/demo1.png)
+
+**Route Simulation Map**
+
+![Route Simulation](github-assets/demo2.png)
+
+| Battery Health                             | Cost & Emission Panel                             |
+| ------------------------------------------ | ------------------------------------------------- |
+| ![Battery Health](github-assets/demo3.png) | ![Cost and Emission KPI](github-assets/demo4.png) |
 
 ## Notebook Walkthrough
 
@@ -115,6 +119,13 @@ From repository output artifacts:
 - `optimized_routes_final.json`
 - `visualization_map.html`
 - `hcm_real_stations.html`
+
+### Raw data download
+
+- Google Drive folder: https://drive.google.com/drive/folders/1oteX3fA6EAeXzRPInSOMG__pXt0SI9Y9?usp=sharing
+- Files to download:
+	- `ev_stations.csv`
+	- `fmcg_sales.csv`
 
 ## Suggested Extra Images for GitHub
 
