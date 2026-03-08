@@ -1,0 +1,3 @@
+# Keep raw-data folder structure, but do not upload raw files
+/data/01_raw/*
+!/data/01_raw/.gitkeep

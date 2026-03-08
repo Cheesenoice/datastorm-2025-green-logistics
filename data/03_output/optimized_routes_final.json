@@ -1,0 +1,2071 @@
+[
+    {
+        "vehicle_id": "D1_EV_00",
+        "trip_id": "D1_EV_00_T0",
+        "start_time": 0,
+        "end_time": 95,
+        "total_km": 26.91,
+        "load": 600,
+        "start_battery": 81,
+        "path": [
+            {
+                "lat": 10.735,
+                "long": 106.73,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 81
+            },
+            {
+                "name": "Gigamall Thủ Đức",
+                "type": "Hypermarket",
+                "lat": 10.8277,
+                "long": 106.7216,
+                "action": "Delivery",
+                "soc": 72.0,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.735,
+                "long": 106.73,
+                "action": "Finish",
+                "soc": 62.9,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D1_EV_01",
+        "trip_id": "D1_EV_01_T1",
+        "start_time": 0,
+        "end_time": 95,
+        "total_km": 26.91,
+        "load": 600,
+        "start_battery": 71,
+        "path": [
+            {
+                "lat": 10.735,
+                "long": 106.73,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 71
+            },
+            {
+                "name": "Gigamall Thủ Đức",
+                "type": "Hypermarket",
+                "lat": 10.8277,
+                "long": 106.7216,
+                "action": "Delivery",
+                "soc": 88.8,
+                "charged": 10
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.735,
+                "long": 106.73,
+                "action": "Finish",
+                "soc": 79.8,
+                "charged": 0
+            }
+        ],
+        "logs": [
+            "⚡ Sạc tranh thủ tại Gigamall Thủ Đức"
+        ]
+    },
+    {
+        "vehicle_id": "D1_EV_02",
+        "trip_id": "D1_EV_02_T2",
+        "start_time": 0,
+        "end_time": 95,
+        "total_km": 26.91,
+        "load": 600,
+        "start_battery": 80,
+        "path": [
+            {
+                "lat": 10.735,
+                "long": 106.73,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 80
+            },
+            {
+                "name": "Gigamall Thủ Đức",
+                "type": "Hypermarket",
+                "lat": 10.8277,
+                "long": 106.7216,
+                "action": "Delivery",
+                "soc": 71.0,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.735,
+                "long": 106.73,
+                "action": "Finish",
+                "soc": 61.9,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D1_EV_03",
+        "trip_id": "D1_EV_03_T3",
+        "start_time": 0,
+        "end_time": 95,
+        "total_km": 26.91,
+        "load": 600,
+        "start_battery": 80,
+        "path": [
+            {
+                "lat": 10.735,
+                "long": 106.73,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 80
+            },
+            {
+                "name": "Gigamall Thủ Đức",
+                "type": "Hypermarket",
+                "lat": 10.8277,
+                "long": 106.7216,
+                "action": "Delivery",
+                "soc": 71.0,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.735,
+                "long": 106.73,
+                "action": "Finish",
+                "soc": 61.9,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D1_EV_04",
+        "trip_id": "D1_EV_04_T4",
+        "start_time": 0,
+        "end_time": 72,
+        "total_km": 19.22,
+        "load": 600,
+        "start_battery": 72,
+        "path": [
+            {
+                "lat": 10.735,
+                "long": 106.73,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 72
+            },
+            {
+                "name": "MM Mega Market An Phú",
+                "type": "Hypermarket",
+                "lat": 10.8002,
+                "long": 106.7432,
+                "action": "Delivery",
+                "soc": 92.4,
+                "charged": 10
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.735,
+                "long": 106.73,
+                "action": "Finish",
+                "soc": 86.0,
+                "charged": 0
+            }
+        ],
+        "logs": [
+            "⚡ Sạc tranh thủ tại MM Mega Market An Phú"
+        ]
+    },
+    {
+        "vehicle_id": "D1_EV_05",
+        "trip_id": "D1_EV_05_T5",
+        "start_time": 0,
+        "end_time": 72,
+        "total_km": 19.22,
+        "load": 600,
+        "start_battery": 80,
+        "path": [
+            {
+                "lat": 10.735,
+                "long": 106.73,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 80
+            },
+            {
+                "name": "MM Mega Market An Phú",
+                "type": "Hypermarket",
+                "lat": 10.8002,
+                "long": 106.7432,
+                "action": "Delivery",
+                "soc": 73.5,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.735,
+                "long": 106.73,
+                "action": "Finish",
+                "soc": 67.1,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D1_EV_06",
+        "trip_id": "D1_EV_06_T6",
+        "start_time": 0,
+        "end_time": 72,
+        "total_km": 19.22,
+        "load": 600,
+        "start_battery": 73,
+        "path": [
+            {
+                "lat": 10.735,
+                "long": 106.73,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 73
+            },
+            {
+                "name": "MM Mega Market An Phú",
+                "type": "Hypermarket",
+                "lat": 10.8002,
+                "long": 106.7432,
+                "action": "Delivery",
+                "soc": 93.4,
+                "charged": 10
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.735,
+                "long": 106.73,
+                "action": "Finish",
+                "soc": 87.0,
+                "charged": 0
+            }
+        ],
+        "logs": [
+            "⚡ Sạc tranh thủ tại MM Mega Market An Phú"
+        ]
+    },
+    {
+        "vehicle_id": "D1_EV_07",
+        "trip_id": "D1_EV_07_T7",
+        "start_time": 0,
+        "end_time": 67,
+        "total_km": 17.38,
+        "load": 600,
+        "start_battery": 71,
+        "path": [
+            {
+                "lat": 10.735,
+                "long": 106.73,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 71
+            },
+            {
+                "name": "WinMart Landmark 81",
+                "type": "Supermarket",
+                "lat": 10.7946,
+                "long": 106.7221,
+                "action": "Delivery",
+                "soc": 92.0,
+                "charged": 10
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.735,
+                "long": 106.73,
+                "action": "Finish",
+                "soc": 86.2,
+                "charged": 0
+            }
+        ],
+        "logs": [
+            "⚡ Sạc tranh thủ tại WinMart Landmark 81"
+        ]
+    },
+    {
+        "vehicle_id": "D1_EV_08",
+        "trip_id": "D1_EV_08_T8",
+        "start_time": 0,
+        "end_time": 67,
+        "total_km": 17.38,
+        "load": 600,
+        "start_battery": 81,
+        "path": [
+            {
+                "lat": 10.735,
+                "long": 106.73,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 81
+            },
+            {
+                "name": "WinMart Landmark 81",
+                "type": "Supermarket",
+                "lat": 10.7946,
+                "long": 106.7221,
+                "action": "Delivery",
+                "soc": 75.2,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.735,
+                "long": 106.73,
+                "action": "Finish",
+                "soc": 69.3,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D1_EV_09",
+        "trip_id": "D1_EV_09_T9",
+        "start_time": 0,
+        "end_time": 61,
+        "total_km": 15.59,
+        "load": 600,
+        "start_battery": 84,
+        "path": [
+            {
+                "lat": 10.735,
+                "long": 106.73,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 84
+            },
+            {
+                "name": "Co.opmart Cống Quỳnh",
+                "type": "Supermarket",
+                "lat": 10.7675,
+                "long": 106.6862,
+                "action": "Delivery",
+                "soc": 78.8,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.735,
+                "long": 106.73,
+                "action": "Finish",
+                "soc": 73.5,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D1_EV_09",
+        "trip_id": "D1_EV_09_T10",
+        "start_time": 91,
+        "end_time": 153,
+        "total_km": 15.59,
+        "load": 600,
+        "start_battery": 73.5,
+        "path": [
+            {
+                "lat": 10.735,
+                "long": 106.73,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 73.5
+            },
+            {
+                "name": "Co.opmart Cống Quỳnh",
+                "type": "Supermarket",
+                "lat": 10.7675,
+                "long": 106.6862,
+                "action": "Delivery",
+                "soc": 95.1,
+                "charged": 10
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.735,
+                "long": 106.73,
+                "action": "Finish",
+                "soc": 89.9,
+                "charged": 0
+            }
+        ],
+        "logs": [
+            "⚡ Sạc tranh thủ tại Co.opmart Cống Quỳnh"
+        ]
+    },
+    {
+        "vehicle_id": "D1_EV_08",
+        "trip_id": "D1_EV_08_T11",
+        "start_time": 97,
+        "end_time": 174,
+        "total_km": 15.79,
+        "load": 600,
+        "start_battery": 69.3,
+        "path": [
+            {
+                "lat": 10.735,
+                "long": 106.73,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 69.3
+            },
+            {
+                "name": "Trạm xăng tư nhân",
+                "type": "Public Station",
+                "lat": 10.7384207,
+                "long": 106.7299408,
+                "action": "Active Charge",
+                "soc": 89.1,
+                "charged": 7.5
+            },
+            {
+                "name": "Co.opmart Cống Quỳnh",
+                "type": "Supermarket",
+                "lat": 10.7675,
+                "long": 106.6862,
+                "action": "Delivery",
+                "soc": 84.1,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.735,
+                "long": 106.73,
+                "action": "Finish",
+                "soc": 78.8,
+                "charged": 0
+            }
+        ],
+        "logs": [
+            "🔌 Tiện đường ghé trạm Trạm xăng tư nhân (Vòng 0.2km) [+7.5 kWh]"
+        ]
+    },
+    {
+        "vehicle_id": "D1_EV_07",
+        "trip_id": "D1_EV_07_T12",
+        "start_time": 97,
+        "end_time": 141,
+        "total_km": 9.76,
+        "load": 600,
+        "start_battery": 86.2,
+        "path": [
+            {
+                "lat": 10.735,
+                "long": 106.73,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 86.2
+            },
+            {
+                "name": "Kho J&T Express Q.7",
+                "type": "E-commerce",
+                "lat": 10.7398,
+                "long": 106.696,
+                "action": "Delivery",
+                "soc": 82.9,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.735,
+                "long": 106.73,
+                "action": "Finish",
+                "soc": 79.6,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D1_EV_06",
+        "trip_id": "D1_EV_06_T13",
+        "start_time": 102,
+        "end_time": 146,
+        "total_km": 9.76,
+        "load": 600,
+        "start_battery": 87.0,
+        "path": [
+            {
+                "lat": 10.735,
+                "long": 106.73,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 87.0
+            },
+            {
+                "name": "Kho J&T Express Q.7",
+                "type": "E-commerce",
+                "lat": 10.7398,
+                "long": 106.696,
+                "action": "Delivery",
+                "soc": 83.7,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.735,
+                "long": 106.73,
+                "action": "Finish",
+                "soc": 80.4,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D1_EV_05",
+        "trip_id": "D1_EV_05_T14",
+        "start_time": 102,
+        "end_time": 163,
+        "total_km": 10.2,
+        "load": 600,
+        "start_battery": 67.1,
+        "path": [
+            {
+                "lat": 10.735,
+                "long": 106.73,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 67.1
+            },
+            {
+                "name": "Trạm xăng tư nhân",
+                "type": "Public Station",
+                "lat": 10.7384207,
+                "long": 106.7299408,
+                "action": "Active Charge",
+                "soc": 86.9,
+                "charged": 7.5
+            },
+            {
+                "name": "Kho J&T Express Q.7",
+                "type": "E-commerce",
+                "lat": 10.7398,
+                "long": 106.696,
+                "action": "Delivery",
+                "soc": 83.7,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.735,
+                "long": 106.73,
+                "action": "Finish",
+                "soc": 80.4,
+                "charged": 0
+            }
+        ],
+        "logs": [
+            "🔌 Tiện đường ghé trạm Trạm xăng tư nhân (Vòng 0.4km) [+7.5 kWh]"
+        ]
+    },
+    {
+        "vehicle_id": "D1_EV_04",
+        "trip_id": "D1_EV_04_T15",
+        "start_time": 102,
+        "end_time": 142,
+        "total_km": 8.19,
+        "load": 600,
+        "start_battery": 86.0,
+        "path": [
+            {
+                "lat": 10.735,
+                "long": 106.73,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 86.0
+            },
+            {
+                "name": "Lotte Mart Quận 7",
+                "type": "Hypermarket",
+                "lat": 10.7409,
+                "long": 106.7018,
+                "action": "Delivery",
+                "soc": 83.3,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.735,
+                "long": 106.73,
+                "action": "Finish",
+                "soc": 80.5,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D1_EV_03",
+        "trip_id": "D1_EV_03_T16",
+        "start_time": 125,
+        "end_time": 181,
+        "total_km": 8.6,
+        "load": 600,
+        "start_battery": 61.9,
+        "path": [
+            {
+                "lat": 10.735,
+                "long": 106.73,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 61.9
+            },
+            {
+                "name": "Trạm xăng tư nhân",
+                "type": "Public Station",
+                "lat": 10.7384207,
+                "long": 106.7299408,
+                "action": "Active Charge",
+                "soc": 81.7,
+                "charged": 7.5
+            },
+            {
+                "name": "Lotte Mart Quận 7",
+                "type": "Hypermarket",
+                "lat": 10.7409,
+                "long": 106.7018,
+                "action": "Delivery",
+                "soc": 79.0,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.735,
+                "long": 106.73,
+                "action": "Finish",
+                "soc": 76.3,
+                "charged": 0
+            }
+        ],
+        "logs": [
+            "🔌 Tiện đường ghé trạm Trạm xăng tư nhân (Vòng 0.4km) [+7.5 kWh]"
+        ]
+    },
+    {
+        "vehicle_id": "D1_EV_02",
+        "trip_id": "D1_EV_02_T17",
+        "start_time": 125,
+        "end_time": 181,
+        "total_km": 8.6,
+        "load": 600,
+        "start_battery": 61.9,
+        "path": [
+            {
+                "lat": 10.735,
+                "long": 106.73,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 61.9
+            },
+            {
+                "name": "Trạm xăng tư nhân",
+                "type": "Public Station",
+                "lat": 10.7384207,
+                "long": 106.7299408,
+                "action": "Active Charge",
+                "soc": 81.7,
+                "charged": 7.5
+            },
+            {
+                "name": "Lotte Mart Quận 7",
+                "type": "Hypermarket",
+                "lat": 10.7409,
+                "long": 106.7018,
+                "action": "Delivery",
+                "soc": 79.0,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.735,
+                "long": 106.73,
+                "action": "Finish",
+                "soc": 76.3,
+                "charged": 0
+            }
+        ],
+        "logs": [
+            "🔌 Tiện đường ghé trạm Trạm xăng tư nhân (Vòng 0.4km) [+7.5 kWh]"
+        ]
+    },
+    {
+        "vehicle_id": "D1_EV_01",
+        "trip_id": "D1_EV_01_T18",
+        "start_time": 125,
+        "end_time": 165,
+        "total_km": 8.19,
+        "load": 600,
+        "start_battery": 79.8,
+        "path": [
+            {
+                "lat": 10.735,
+                "long": 106.73,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 79.8
+            },
+            {
+                "name": "Lotte Mart Quận 7",
+                "type": "Hypermarket",
+                "lat": 10.7409,
+                "long": 106.7018,
+                "action": "Delivery",
+                "soc": 77.1,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.735,
+                "long": 106.73,
+                "action": "Finish",
+                "soc": 74.3,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D1_EV_00",
+        "trip_id": "D1_EV_00_T19",
+        "start_time": 125,
+        "end_time": 426,
+        "total_km": 35.15,
+        "load": 591,
+        "start_battery": 62.9,
+        "path": [
+            {
+                "lat": 10.735,
+                "long": 106.73,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 62.9
+            },
+            {
+                "name": "Trạm xăng tư nhân",
+                "type": "Public Station",
+                "lat": 10.7384207,
+                "long": 106.7299408,
+                "action": "Active Charge",
+                "soc": 82.7,
+                "charged": 7.5
+            },
+            {
+                "name": "GS25 Tôn Đản",
+                "type": "Convenience",
+                "lat": 10.7588,
+                "long": 106.7067,
+                "action": "Delivery",
+                "soc": 79.7,
+                "charged": 0
+            },
+            {
+                "name": "GS25 Bến Vân Đồn",
+                "type": "Convenience",
+                "lat": 10.7669,
+                "long": 106.7039,
+                "action": "Delivery",
+                "soc": 78.9,
+                "charged": 0
+            },
+            {
+                "name": "GS25 Bến Vân Đồn",
+                "type": "Convenience",
+                "lat": 10.7624,
+                "long": 106.6991,
+                "action": "Delivery",
+                "soc": 78.3,
+                "charged": 0
+            },
+            {
+                "name": "GS25 Khánh Hội",
+                "type": "Convenience",
+                "lat": 10.7596,
+                "long": 106.6987,
+                "action": "Delivery",
+                "soc": 78.0,
+                "charged": 0
+            },
+            {
+                "name": "Circle K Nguyễn Khắc Nhu",
+                "type": "Convenience",
+                "lat": 10.7636,
+                "long": 106.6929,
+                "action": "Delivery",
+                "soc": 77.3,
+                "charged": 0
+            },
+            {
+                "name": "Circle K Nguyễn Thái Học",
+                "type": "Convenience",
+                "lat": 10.7664,
+                "long": 106.6961,
+                "action": "Delivery",
+                "soc": 76.9,
+                "charged": 0
+            },
+            {
+                "name": "Circle K Nguyễn Văn Tráng",
+                "type": "Convenience",
+                "lat": 10.7699,
+                "long": 106.6923,
+                "action": "Delivery",
+                "soc": 76.4,
+                "charged": 0
+            },
+            {
+                "name": "Circle K Nguyễn Trãi",
+                "type": "Convenience",
+                "lat": 10.7646,
+                "long": 106.6876,
+                "action": "Delivery",
+                "soc": 75.7,
+                "charged": 0
+            },
+            {
+                "name": "Co.opmart Cống Quỳnh",
+                "type": "Supermarket",
+                "lat": 10.7675,
+                "long": 106.6862,
+                "action": "Delivery",
+                "soc": 75.4,
+                "charged": 0
+            },
+            {
+                "name": "FamilyMart Nguyễn Đình Chiểu",
+                "type": "Convenience",
+                "lat": 10.7733,
+                "long": 106.685,
+                "action": "Delivery",
+                "soc": 74.9,
+                "charged": 0
+            },
+            {
+                "name": "FamilyMart Võ Văn Tần",
+                "type": "Convenience",
+                "lat": 10.7768,
+                "long": 106.6903,
+                "action": "Delivery",
+                "soc": 74.2,
+                "charged": 0
+            },
+            {
+                "name": "Gigamall Thủ Đức",
+                "type": "Hypermarket",
+                "lat": 10.8277,
+                "long": 106.7216,
+                "action": "Delivery",
+                "soc": 95.3,
+                "charged": 10
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.735,
+                "long": 106.73,
+                "action": "Finish",
+                "soc": 86.3,
+                "charged": 0
+            }
+        ],
+        "logs": [
+            "🔌 Tiện đường ghé trạm Trạm xăng tư nhân (Vòng 0.1km) [+7.5 kWh]",
+            "⚡ Sạc tranh thủ tại Gigamall Thủ Đức"
+        ]
+    },
+    {
+        "vehicle_id": "D1_EV_07",
+        "trip_id": "D1_EV_07_T20",
+        "start_time": 171,
+        "end_time": 238,
+        "total_km": 17.38,
+        "load": 579,
+        "start_battery": 79.6,
+        "path": [
+            {
+                "lat": 10.735,
+                "long": 106.73,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 79.6
+            },
+            {
+                "name": "WinMart Landmark 81",
+                "type": "Supermarket",
+                "lat": 10.7946,
+                "long": 106.7221,
+                "action": "Delivery",
+                "soc": 73.8,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.735,
+                "long": 106.73,
+                "action": "Finish",
+                "soc": 67.9,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D1_EV_04",
+        "trip_id": "D1_EV_04_T21",
+        "start_time": 172,
+        "end_time": 258,
+        "total_km": 13.72,
+        "load": 568,
+        "start_battery": 80.5,
+        "path": [
+            {
+                "lat": 10.735,
+                "long": 106.73,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 80.5
+            },
+            {
+                "name": "GS25 Đường Số 41 Q4",
+                "type": "Convenience",
+                "lat": 10.7588,
+                "long": 106.7006,
+                "action": "Delivery",
+                "soc": 76.9,
+                "charged": 0
+            },
+            {
+                "name": "Lotte Mart Quận 7",
+                "type": "Hypermarket",
+                "lat": 10.7409,
+                "long": 106.7018,
+                "action": "Delivery",
+                "soc": 75.1,
+                "charged": 0
+            },
+            {
+                "name": "Kho J&T Express Q.7",
+                "type": "E-commerce",
+                "lat": 10.7398,
+                "long": 106.696,
+                "action": "Delivery",
+                "soc": 74.6,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.735,
+                "long": 106.73,
+                "action": "Finish",
+                "soc": 71.3,
+                "charged": 0
+            }
+        ],
+        "logs": [
+            "❌ Bỏ qua điểm lỗi Circle K Phạm Ngũ Lão xa 1396.8km",
+            "❌ Bỏ qua điểm lỗi FamilyMart Nguyễn Đình Chiểu xa 1396.6km"
+        ]
+    },
+    {
+        "vehicle_id": "D1_EV_06",
+        "trip_id": "D1_EV_06_T22",
+        "start_time": 176,
+        "end_time": 249,
+        "total_km": 19.22,
+        "load": 548,
+        "start_battery": 80.4,
+        "path": [
+            {
+                "lat": 10.735,
+                "long": 106.73,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 80.4
+            },
+            {
+                "name": "MM Mega Market An Phú",
+                "type": "Hypermarket",
+                "lat": 10.8002,
+                "long": 106.7432,
+                "action": "Delivery",
+                "soc": 73.9,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.735,
+                "long": 106.73,
+                "action": "Finish",
+                "soc": 67.5,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D3_EV_00",
+        "trip_id": "D3_EV_00_T0",
+        "start_time": 0,
+        "end_time": 78,
+        "total_km": 21.21,
+        "load": 600,
+        "start_battery": 83,
+        "path": [
+            {
+                "lat": 10.81,
+                "long": 106.62,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 83
+            },
+            {
+                "name": "Emart Gò Vấp",
+                "type": "Hypermarket",
+                "lat": 10.8231,
+                "long": 106.6935,
+                "action": "Delivery",
+                "soc": 75.9,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.81,
+                "long": 106.62,
+                "action": "Finish",
+                "soc": 68.8,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D3_EV_01",
+        "trip_id": "D3_EV_01_T1",
+        "start_time": 0,
+        "end_time": 78,
+        "total_km": 21.21,
+        "load": 600,
+        "start_battery": 72,
+        "path": [
+            {
+                "lat": 10.81,
+                "long": 106.62,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 72
+            },
+            {
+                "name": "Emart Gò Vấp",
+                "type": "Hypermarket",
+                "lat": 10.8231,
+                "long": 106.6935,
+                "action": "Delivery",
+                "soc": 91.7,
+                "charged": 10
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.81,
+                "long": 106.62,
+                "action": "Finish",
+                "soc": 84.6,
+                "charged": 0
+            }
+        ],
+        "logs": [
+            "⚡ Sạc tranh thủ tại Emart Gò Vấp"
+        ]
+    },
+    {
+        "vehicle_id": "D3_EV_02",
+        "trip_id": "D3_EV_02_T2",
+        "start_time": 0,
+        "end_time": 78,
+        "total_km": 21.21,
+        "load": 600,
+        "start_battery": 71,
+        "path": [
+            {
+                "lat": 10.81,
+                "long": 106.62,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 71
+            },
+            {
+                "name": "Emart Gò Vấp",
+                "type": "Hypermarket",
+                "lat": 10.8231,
+                "long": 106.6935,
+                "action": "Delivery",
+                "soc": 90.7,
+                "charged": 10
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.81,
+                "long": 106.62,
+                "action": "Finish",
+                "soc": 83.6,
+                "charged": 0
+            }
+        ],
+        "logs": [
+            "⚡ Sạc tranh thủ tại Emart Gò Vấp"
+        ]
+    },
+    {
+        "vehicle_id": "D3_EV_03",
+        "trip_id": "D3_EV_03_T3",
+        "start_time": 0,
+        "end_time": 78,
+        "total_km": 21.21,
+        "load": 600,
+        "start_battery": 75,
+        "path": [
+            {
+                "lat": 10.81,
+                "long": 106.62,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 75
+            },
+            {
+                "name": "Emart Gò Vấp",
+                "type": "Hypermarket",
+                "lat": 10.8231,
+                "long": 106.6935,
+                "action": "Delivery",
+                "soc": 94.7,
+                "charged": 10
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.81,
+                "long": 106.62,
+                "action": "Finish",
+                "soc": 87.6,
+                "charged": 0
+            }
+        ],
+        "logs": [
+            "⚡ Sạc tranh thủ tại Emart Gò Vấp"
+        ]
+    },
+    {
+        "vehicle_id": "D3_EV_04",
+        "trip_id": "D3_EV_04_T4",
+        "start_time": 0,
+        "end_time": 73,
+        "total_km": 19.59,
+        "load": 600,
+        "start_battery": 89,
+        "path": [
+            {
+                "lat": 10.81,
+                "long": 106.62,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 89
+            },
+            {
+                "name": "Co.opmart Rạch Miễu",
+                "type": "Supermarket",
+                "lat": 10.8004,
+                "long": 106.6883,
+                "action": "Delivery",
+                "soc": 82.4,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.81,
+                "long": 106.62,
+                "action": "Finish",
+                "soc": 75.8,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D3_EV_05",
+        "trip_id": "D3_EV_05_T5",
+        "start_time": 0,
+        "end_time": 73,
+        "total_km": 19.59,
+        "load": 600,
+        "start_battery": 82,
+        "path": [
+            {
+                "lat": 10.81,
+                "long": 106.62,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 82
+            },
+            {
+                "name": "Co.opmart Rạch Miễu",
+                "type": "Supermarket",
+                "lat": 10.8004,
+                "long": 106.6883,
+                "action": "Delivery",
+                "soc": 75.4,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.81,
+                "long": 106.62,
+                "action": "Finish",
+                "soc": 68.8,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D3_EV_06",
+        "trip_id": "D3_EV_06_T6",
+        "start_time": 0,
+        "end_time": 72,
+        "total_km": 14.16,
+        "load": 600,
+        "start_battery": 71,
+        "path": [
+            {
+                "lat": 10.81,
+                "long": 106.62,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 71
+            },
+            {
+                "name": "Kho Ninja Van Tân Bình",
+                "type": "E-commerce",
+                "lat": 10.7989,
+                "long": 106.6684,
+                "action": "Delivery",
+                "soc": 66.3,
+                "charged": 0
+            },
+            {
+                "name": "Petrolimex",
+                "type": "Public Station",
+                "lat": 10.798363800000002,
+                "long": 106.66315355000002,
+                "action": "Active Charge",
+                "soc": 85.9,
+                "charged": 7.5
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.81,
+                "long": 106.62,
+                "action": "Finish",
+                "soc": 81.6,
+                "charged": 0
+            }
+        ],
+        "logs": [
+            "🔌 Tiện đường ghé trạm Petrolimex (Vòng 0.0km) [+7.5 kWh]"
+        ]
+    },
+    {
+        "vehicle_id": "D3_EV_07",
+        "trip_id": "D3_EV_07_T7",
+        "start_time": 0,
+        "end_time": 57,
+        "total_km": 14.11,
+        "load": 600,
+        "start_battery": 85,
+        "path": [
+            {
+                "lat": 10.81,
+                "long": 106.62,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 85
+            },
+            {
+                "name": "Kho Ninja Van Tân Bình",
+                "type": "E-commerce",
+                "lat": 10.7989,
+                "long": 106.6684,
+                "action": "Delivery",
+                "soc": 80.3,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.81,
+                "long": 106.62,
+                "action": "Finish",
+                "soc": 75.5,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D3_EV_08",
+        "trip_id": "D3_EV_08_T8",
+        "start_time": 0,
+        "end_time": 72,
+        "total_km": 14.16,
+        "load": 600,
+        "start_battery": 72,
+        "path": [
+            {
+                "lat": 10.81,
+                "long": 106.62,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 72
+            },
+            {
+                "name": "Kho Ninja Van Tân Bình",
+                "type": "E-commerce",
+                "lat": 10.7989,
+                "long": 106.6684,
+                "action": "Delivery",
+                "soc": 67.3,
+                "charged": 0
+            },
+            {
+                "name": "Petrolimex",
+                "type": "Public Station",
+                "lat": 10.798363800000002,
+                "long": 106.66315355000002,
+                "action": "Active Charge",
+                "soc": 86.9,
+                "charged": 7.5
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.81,
+                "long": 106.62,
+                "action": "Finish",
+                "soc": 82.6,
+                "charged": 0
+            }
+        ],
+        "logs": [
+            "🔌 Tiện đường ghé trạm Petrolimex (Vòng 0.0km) [+7.5 kWh]"
+        ]
+    },
+    {
+        "vehicle_id": "D3_EV_09",
+        "trip_id": "D3_EV_09_T9",
+        "start_time": 0,
+        "end_time": 49,
+        "total_km": 11.46,
+        "load": 600,
+        "start_battery": 85,
+        "path": [
+            {
+                "lat": 10.81,
+                "long": 106.62,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 85
+            },
+            {
+                "name": "Kho Shopee Express Tân Phú",
+                "type": "E-commerce",
+                "lat": 10.7722,
+                "long": 106.6322,
+                "action": "Delivery",
+                "soc": 81.2,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.81,
+                "long": 106.62,
+                "action": "Finish",
+                "soc": 77.3,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D3_EV_09",
+        "trip_id": "D3_EV_09_T10",
+        "start_time": 79,
+        "end_time": 128,
+        "total_km": 11.46,
+        "load": 600,
+        "start_battery": 77.3,
+        "path": [
+            {
+                "lat": 10.81,
+                "long": 106.62,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 77.3
+            },
+            {
+                "name": "Kho Shopee Express Tân Phú",
+                "type": "E-commerce",
+                "lat": 10.7722,
+                "long": 106.6322,
+                "action": "Delivery",
+                "soc": 73.5,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.81,
+                "long": 106.62,
+                "action": "Finish",
+                "soc": 69.6,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D3_EV_07",
+        "trip_id": "D3_EV_07_T11",
+        "start_time": 87,
+        "end_time": 136,
+        "total_km": 11.46,
+        "load": 600,
+        "start_battery": 75.5,
+        "path": [
+            {
+                "lat": 10.81,
+                "long": 106.62,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 75.5
+            },
+            {
+                "name": "Kho Shopee Express Tân Phú",
+                "type": "E-commerce",
+                "lat": 10.7722,
+                "long": 106.6322,
+                "action": "Delivery",
+                "soc": 71.7,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.81,
+                "long": 106.62,
+                "action": "Finish",
+                "soc": 67.8,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D3_EV_08",
+        "trip_id": "D3_EV_08_T12",
+        "start_time": 102,
+        "end_time": 130,
+        "total_km": 4.3,
+        "load": 600,
+        "start_battery": 82.6,
+        "path": [
+            {
+                "lat": 10.81,
+                "long": 106.62,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 82.6
+            },
+            {
+                "name": "Go! Trường Chinh",
+                "type": "Hypermarket",
+                "lat": 10.8061,
+                "long": 106.6346,
+                "action": "Delivery",
+                "soc": 81.2,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.81,
+                "long": 106.62,
+                "action": "Finish",
+                "soc": 79.7,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D3_EV_06",
+        "trip_id": "D3_EV_06_T13",
+        "start_time": 102,
+        "end_time": 130,
+        "total_km": 4.3,
+        "load": 600,
+        "start_battery": 81.6,
+        "path": [
+            {
+                "lat": 10.81,
+                "long": 106.62,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 81.6
+            },
+            {
+                "name": "Go! Trường Chinh",
+                "type": "Hypermarket",
+                "lat": 10.8061,
+                "long": 106.6346,
+                "action": "Delivery",
+                "soc": 80.2,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.81,
+                "long": 106.62,
+                "action": "Finish",
+                "soc": 78.7,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D3_EV_05",
+        "trip_id": "D3_EV_05_T14",
+        "start_time": 103,
+        "end_time": 147,
+        "total_km": 4.57,
+        "load": 600,
+        "start_battery": 68.8,
+        "path": [
+            {
+                "lat": 10.81,
+                "long": 106.62,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 68.8
+            },
+            {
+                "name": "Trạm xăng tư nhân",
+                "type": "Public Station",
+                "lat": 10.8077213,
+                "long": 106.6199747,
+                "action": "Active Charge",
+                "soc": 88.7,
+                "charged": 7.5
+            },
+            {
+                "name": "Go! Trường Chinh",
+                "type": "Hypermarket",
+                "lat": 10.8061,
+                "long": 106.6346,
+                "action": "Delivery",
+                "soc": 87.3,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.81,
+                "long": 106.62,
+                "action": "Finish",
+                "soc": 85.9,
+                "charged": 0
+            }
+        ],
+        "logs": [
+            "🔌 Tiện đường ghé trạm Trạm xăng tư nhân (Vòng 0.3km) [+7.5 kWh]"
+        ]
+    },
+    {
+        "vehicle_id": "D3_EV_04",
+        "trip_id": "D3_EV_04_T15",
+        "start_time": 103,
+        "end_time": 131,
+        "total_km": 4.3,
+        "load": 600,
+        "start_battery": 75.8,
+        "path": [
+            {
+                "lat": 10.81,
+                "long": 106.62,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 75.8
+            },
+            {
+                "name": "Go! Trường Chinh",
+                "type": "Hypermarket",
+                "lat": 10.8061,
+                "long": 106.6346,
+                "action": "Delivery",
+                "soc": 74.4,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.81,
+                "long": 106.62,
+                "action": "Finish",
+                "soc": 72.9,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D3_EV_03",
+        "trip_id": "D3_EV_03_T16",
+        "start_time": 108,
+        "end_time": 131,
+        "total_km": 2.54,
+        "load": 600,
+        "start_battery": 87.6,
+        "path": [
+            {
+                "lat": 10.81,
+                "long": 106.62,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 87.6
+            },
+            {
+                "name": "Aeon Mall Tân Phú",
+                "type": "Hypermarket",
+                "lat": 10.8016,
+                "long": 106.6174,
+                "action": "Delivery",
+                "soc": 86.7,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.81,
+                "long": 106.62,
+                "action": "Finish",
+                "soc": 85.9,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D3_EV_02",
+        "trip_id": "D3_EV_02_T17",
+        "start_time": 108,
+        "end_time": 131,
+        "total_km": 2.54,
+        "load": 600,
+        "start_battery": 83.6,
+        "path": [
+            {
+                "lat": 10.81,
+                "long": 106.62,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 83.6
+            },
+            {
+                "name": "Aeon Mall Tân Phú",
+                "type": "Hypermarket",
+                "lat": 10.8016,
+                "long": 106.6174,
+                "action": "Delivery",
+                "soc": 82.7,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.81,
+                "long": 106.62,
+                "action": "Finish",
+                "soc": 81.9,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D3_EV_01",
+        "trip_id": "D3_EV_01_T18",
+        "start_time": 108,
+        "end_time": 131,
+        "total_km": 2.54,
+        "load": 600,
+        "start_battery": 84.6,
+        "path": [
+            {
+                "lat": 10.81,
+                "long": 106.62,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 84.6
+            },
+            {
+                "name": "Aeon Mall Tân Phú",
+                "type": "Hypermarket",
+                "lat": 10.8016,
+                "long": 106.6174,
+                "action": "Delivery",
+                "soc": 83.7,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.81,
+                "long": 106.62,
+                "action": "Finish",
+                "soc": 82.9,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D3_EV_00",
+        "trip_id": "D3_EV_00_T19",
+        "start_time": 108,
+        "end_time": 146,
+        "total_km": 2.56,
+        "load": 600,
+        "start_battery": 68.8,
+        "path": [
+            {
+                "lat": 10.81,
+                "long": 106.62,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 68.8
+            },
+            {
+                "name": "Trạm xăng tư nhân",
+                "type": "Public Station",
+                "lat": 10.8077213,
+                "long": 106.6199747,
+                "action": "Active Charge",
+                "soc": 88.7,
+                "charged": 7.5
+            },
+            {
+                "name": "Aeon Mall Tân Phú",
+                "type": "Hypermarket",
+                "lat": 10.8016,
+                "long": 106.6174,
+                "action": "Delivery",
+                "soc": 88.1,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.81,
+                "long": 106.62,
+                "action": "Finish",
+                "soc": 87.2,
+                "charged": 0
+            }
+        ],
+        "logs": [
+            "🔌 Tiện đường ghé trạm Trạm xăng tư nhân (Vòng 0.0km) [+7.5 kWh]"
+        ]
+    },
+    {
+        "vehicle_id": "D3_EV_09",
+        "trip_id": "D3_EV_09_T20",
+        "start_time": 158,
+        "end_time": 276,
+        "total_km": 24.16,
+        "load": 598,
+        "start_battery": 69.6,
+        "path": [
+            {
+                "lat": 10.81,
+                "long": 106.62,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 69.6
+            },
+            {
+                "name": "Trạm xăng tư nhân",
+                "type": "Public Station",
+                "lat": 10.8077213,
+                "long": 106.6199747,
+                "action": "Active Charge",
+                "soc": 89.5,
+                "charged": 7.5
+            },
+            {
+                "name": "Emart Gò Vấp",
+                "type": "Hypermarket",
+                "lat": 10.8231,
+                "long": 106.6935,
+                "action": "Delivery",
+                "soc": 82.4,
+                "charged": 0
+            },
+            {
+                "name": "Co.opmart Rạch Miễu",
+                "type": "Supermarket",
+                "lat": 10.8004,
+                "long": 106.6883,
+                "action": "Delivery",
+                "soc": 80.1,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.81,
+                "long": 106.62,
+                "action": "Finish",
+                "soc": 73.5,
+                "charged": 0
+            }
+        ],
+        "logs": [
+            "🔌 Tiện đường ghé trạm Trạm xăng tư nhân (Vòng 0.4km) [+7.5 kWh]"
+        ]
+    },
+    {
+        "vehicle_id": "D3_EV_06",
+        "trip_id": "D3_EV_06_T21",
+        "start_time": 160,
+        "end_time": 265,
+        "total_km": 19.99,
+        "load": 549,
+        "start_battery": 78.7,
+        "path": [
+            {
+                "lat": 10.81,
+                "long": 106.62,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 78.7
+            },
+            {
+                "name": "FamilyMart Lý Chính Thắng",
+                "type": "Convenience",
+                "lat": 10.7874,
+                "long": 106.6847,
+                "action": "Delivery",
+                "soc": 72.2,
+                "charged": 0
+            },
+            {
+                "name": "FamilyMart Lý Chính Thắng",
+                "type": "Convenience",
+                "lat": 10.7896,
+                "long": 106.6859,
+                "action": "Delivery",
+                "soc": 71.9,
+                "charged": 0
+            },
+            {
+                "name": "Kho Ninja Van Tân Bình",
+                "type": "E-commerce",
+                "lat": 10.7989,
+                "long": 106.6684,
+                "action": "Delivery",
+                "soc": 70.0,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.81,
+                "long": 106.62,
+                "action": "Finish",
+                "soc": 65.3,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D3_EV_08",
+        "trip_id": "D3_EV_08_T22",
+        "start_time": 160,
+        "end_time": 228,
+        "total_km": 12.79,
+        "load": 506,
+        "start_battery": 79.7,
+        "path": [
+            {
+                "lat": 10.81,
+                "long": 106.62,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 79.7
+            },
+            {
+                "name": "Kho Shopee Express Tân Phú",
+                "type": "E-commerce",
+                "lat": 10.7722,
+                "long": 106.6322,
+                "action": "Delivery",
+                "soc": 75.9,
+                "charged": 0
+            },
+            {
+                "name": "Go! Trường Chinh",
+                "type": "Hypermarket",
+                "lat": 10.8061,
+                "long": 106.6346,
+                "action": "Delivery",
+                "soc": 72.6,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.81,
+                "long": 106.62,
+                "action": "Finish",
+                "soc": 71.1,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    },
+    {
+        "vehicle_id": "D3_EV_01",
+        "trip_id": "D3_EV_01_T23",
+        "start_time": 161,
+        "end_time": 183,
+        "total_km": 2.54,
+        "load": 151,
+        "start_battery": 82.9,
+        "path": [
+            {
+                "lat": 10.81,
+                "long": 106.62,
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "action": "Start",
+                "soc": 82.9
+            },
+            {
+                "name": "Aeon Mall Tân Phú",
+                "type": "Hypermarket",
+                "lat": 10.8016,
+                "long": 106.6174,
+                "action": "Delivery",
+                "soc": 82.0,
+                "charged": 0
+            },
+            {
+                "name": "KHO TỔNG",
+                "type": "Depot",
+                "lat": 10.81,
+                "long": 106.62,
+                "action": "Finish",
+                "soc": 81.2,
+                "charged": 0
+            }
+        ],
+        "logs": []
+    }
+]

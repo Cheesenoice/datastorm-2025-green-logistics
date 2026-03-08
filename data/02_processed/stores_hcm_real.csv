@@ -1,0 +1,28 @@
+store_id_mapped,type,name,address,lat,long,note
+STORE0001,Hypermarket,Emart Gò Vấp,"366 Phan Văn Trị, P.5, Gò Vấp",10.8231,106.6935,Hub phía Bắc
+STORE0004,Hypermarket,Lotte Mart Quận 7,"469 Nguyễn Hữu Thọ, Tân Hưng, Q.7",10.7409,106.7018,Hub phía Nam
+STORE0005,Hypermarket,Aeon Mall Tân Phú,"30 Bờ Bao Tân Thắng, Sơn Kỳ, Tân Phú",10.8016,106.6174,Hub phía Tây
+STORE0006,Hypermarket,Gigamall Thủ Đức,"242 Phạm Văn Đồng, Hiệp Bình Chánh, Thủ Đức",10.8277,106.7216,Hub phía Đông
+STORE0008,Hypermarket,MM Mega Market An Phú,"Khu B, KĐT An Phú An Khánh, Thủ Đức",10.8002,106.7432,Hub phía Đông (Metro cũ)
+STORE0011,Hypermarket,Go! Trường Chinh,"1/1 Trường Chinh, Tây Thạnh, Tân Phú",10.8061,106.6346,Hub phía Tây Bắc
+STORE0002,Supermarket,Co.opmart Cống Quỳnh,"189C Cống Quỳnh, Nguyễn Cư Trinh, Q.1",10.7675,106.6862,Trung tâm Q1
+STORE0003,Supermarket,Co.opmart Rạch Miễu,"48 Hoa Sứ, P.7, Phú Nhuận",10.8004,106.6883,Trung tâm Phú Nhuận
+STORE0007,Supermarket,WinMart Landmark 81,"720A Điện Biên Phủ, P.22, Bình Thạnh",10.7946,106.7221,Trung tâm Bình Thạnh
+STORE0009,E-commerce,Kho Shopee Express Tân Phú,"262 Lũy Bán Bích, Hòa Thạnh, Tân Phú",10.7722,106.6322,Hub Logistics
+STORE0010,E-commerce,Kho J&T Express Q.7,"84 Đường D1, Tân Hưng, Quận 7",10.7398,106.696,Hub Logistics
+STORE0012,E-commerce,Kho Ninja Van Tân Bình,"307 Nguyễn Văn Trỗi, P.1, Tân Bình",10.7989,106.6684,Hub Logistics (Gần sân bay)
+STORE0013_01,Convenience,Circle K Nguyễn Khắc Nhu,"69 Nguyễn Khắc Nhu, Cô Giang, Q.1",10.7636,106.6929,Circle K
+STORE0013_02,Convenience,Circle K Nguyễn Trãi,"257A Nguyễn Trãi, Nguyễn Cư Trinh, Q.1",10.7646,106.6876,Circle K
+STORE0013_03,Convenience,Circle K Nguyễn Thái Học,"65C Nguyễn Thái Học, Cầu Ông Lãnh, Q.1",10.7664,106.6961,Circle K
+STORE0013_04,Convenience,Circle K Phạm Ngũ Lão,"271 Phạm Ngũ Lão, P. Phạm Ngũ Lão, Q.1",1.0768,106.6921,Circle K
+STORE0013_05,Convenience,Circle K Nguyễn Văn Tráng,"11 Nguyễn Văn Tráng, P. Phạm Ngũ Lão, Q.1",10.7699,106.6923,Circle K
+STORE0013_06,Convenience,FamilyMart Lý Chính Thắng,"77 Lý Chính Thắng, Võ Thị Sáu, Q.3",10.7896,106.6859,FamilyMart
+STORE0013_07,Convenience,FamilyMart Võ Văn Tần,"60B Võ Văn Tần, P.6, Q.3",10.7768,106.6903,FamilyMart
+STORE0013_08,Convenience,FamilyMart Nguyễn Đình Chiểu,"414 Nguyễn Đình Chiểu, P.4, Q.3",10.7733,106.685,FamilyMart
+STORE0013_09,Convenience,FamilyMart Lý Chính Thắng,"138 Lý Chính Thắng, P.14, Q.3",10.7874,106.6847,FamilyMart
+STORE0013_10,Convenience,FamilyMart Nguyễn Đình Chiểu,"138D Nguyễn Đình Chiểu, P.6, Q.3",1.0783,106.6941,FamilyMart
+STORE0013_11,Convenience,GS25 Khánh Hội,"262 Khánh Hội, P.5, Q.4",10.7596,106.6987,GS25
+STORE0013_12,Convenience,GS25 Bến Vân Đồn,"34 Bến Vân Đồn (Saigon Royal), Q.4",10.7669,106.7039,GS25
+STORE0013_13,Convenience,GS25 Bến Vân Đồn,"151 Bến Vân Đồn (RiverGate), Q.4",10.7624,106.6991,GS25
+STORE0013_14,Convenience,GS25 Tôn Đản,"150 Tôn Đản, P.8, Q.4",10.7588,106.7067,GS25
+STORE0013_15,Convenience,GS25 Đường Số 41 Q4,"39 Đường Số 41, P.9, Q.4",10.7588,106.7006,GS25

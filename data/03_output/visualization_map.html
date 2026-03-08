@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d1d5bbd57cbbd0f1ddee36cc810c5b2c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+ <div style="
+     position: fixed; 
+     bottom: 50px; left: 50px; width: 170px; height: auto; 
+     border:2px solid grey; z-index:9999; font-size:14px;
+     background-color:white;
+     opacity: 0.9;
+     padding: 10px;
+     border-radius: 5px;
+     font-family: sans-serif;
+     box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+ ">
+     <b>Chú thích (Legend)</b><br>
+     <i class="fa fa-warehouse" style="color:red; margin-top:5px"></i>&nbsp; Kho (Depot)<br>
+     <i class="fa fa-shopping-cart" style="color:blue; margin-top:5px"></i>&nbsp; Supermarket<br>
+     <i class="fa fa-shopping-cart" style="color:green; margin-top:5px"></i>&nbsp; Convenience<br>
+     <i class="fa fa-shopping-cart" style="color:purple; margin-top:5px"></i>&nbsp; E-commerce<br>
+     <i class="fa fa-shopping-cart" style="color:orange; margin-top:5px"></i>&nbsp; Khác<br>
+ </div>
+ 
+    
+            <div class="folium-map" id="map_d1d5bbd57cbbd0f1ddee36cc810c5b2c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d1d5bbd57cbbd0f1ddee36cc810c5b2c = L.map(
+                "map_d1d5bbd57cbbd0f1ddee36cc810c5b2c",
+                {
+                    center: [10.762622, 106.660172],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0a67ae1054e90d4d7b1e71b3cace8a1f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0a67ae1054e90d4d7b1e71b3cace8a1f.addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var marker_c320309a815bcf0f74e84275cc54680b = L.marker(
+                [10.735, 106.73],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_b0e18541f899325e24b088467929c9a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warehouse",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f7775ca550f307fd928a0ffbf40f682 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9c367a73aaed6a0f3ab5920a17cf9251 = $(`<div id="html_9c367a73aaed6a0f3ab5920a17cf9251" style="width: 100.0%; height: 100.0%;"><b>Saigon Express Quận 7</b><br>ID: DEPOT_001<br>34 Đào Trí, Phú Thuận, Q.7</div>`)[0];
+                popup_7f7775ca550f307fd928a0ffbf40f682.setContent(html_9c367a73aaed6a0f3ab5920a17cf9251);
+            
+        
+
+        marker_c320309a815bcf0f74e84275cc54680b.bindPopup(popup_7f7775ca550f307fd928a0ffbf40f682)
+        ;
+
+        
+    
+    
+            marker_c320309a815bcf0f74e84275cc54680b.bindTooltip(
+                `<div>
+                     Depot: Saigon Express Quận 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c320309a815bcf0f74e84275cc54680b.setIcon(icon_b0e18541f899325e24b088467929c9a1);
+            
+    
+            var marker_dfd509909b6da479a2c05f8952f4541a = L.marker(
+                [10.89, 106.82],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_294381f0e4925bb4d0bd77c6a4a5ba7c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warehouse",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d7b2259eb3173a3fd6e5f16bf8714024 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_98935ff52201a2c0cb435b44a64a3cc0 = $(`<div id="html_98935ff52201a2c0cb435b44a64a3cc0" style="width: 100.0%; height: 100.0%;"><b>TBS Logistics Dĩ An</b><br>ID: DEPOT_002<br>Số 9 ĐT743, Bình Thắng, Dĩ An</div>`)[0];
+                popup_d7b2259eb3173a3fd6e5f16bf8714024.setContent(html_98935ff52201a2c0cb435b44a64a3cc0);
+            
+        
+
+        marker_dfd509909b6da479a2c05f8952f4541a.bindPopup(popup_d7b2259eb3173a3fd6e5f16bf8714024)
+        ;
+
+        
+    
+    
+            marker_dfd509909b6da479a2c05f8952f4541a.bindTooltip(
+                `<div>
+                     Depot: TBS Logistics Dĩ An
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dfd509909b6da479a2c05f8952f4541a.setIcon(icon_294381f0e4925bb4d0bd77c6a4a5ba7c);
+            
+    
+            var marker_a228b446fdcb3d077879f534344ee375 = L.marker(
+                [10.81, 106.62],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_de3315ff55bc5d1462938c1f17c61a36 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warehouse",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_abd83b6e6d0183e8f1f1ae37d575d460 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f07f443bc2b2a10bebd3e7e157261aca = $(`<div id="html_f07f443bc2b2a10bebd3e7e157261aca" style="width: 100.0%; height: 100.0%;"><b>SGV Logistics Tân Bình</b><br>ID: DEPOT_003<br>Đường CN1, KCN Tân Bình, Tân Phú</div>`)[0];
+                popup_abd83b6e6d0183e8f1f1ae37d575d460.setContent(html_f07f443bc2b2a10bebd3e7e157261aca);
+            
+        
+
+        marker_a228b446fdcb3d077879f534344ee375.bindPopup(popup_abd83b6e6d0183e8f1f1ae37d575d460)
+        ;
+
+        
+    
+    
+            marker_a228b446fdcb3d077879f534344ee375.bindTooltip(
+                `<div>
+                     Depot: SGV Logistics Tân Bình
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a228b446fdcb3d077879f534344ee375.setIcon(icon_de3315ff55bc5d1462938c1f17c61a36);
+            
+    
+            var marker_19aa907247e56daf9d484a0291a03b0d = L.marker(
+                [10.8231, 106.6935],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_534a197e326e30039f86b76cf28b69ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6ff1cebfa668bac49d440974712e09a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8b56e8edbbd9b3920d567c60108cc0f5 = $(`<div id="html_8b56e8edbbd9b3920d567c60108cc0f5" style="width: 100.0%; height: 100.0%;"><b>Emart Gò Vấp</b><br>ID: STORE0001<br>Type: Hypermarket</div>`)[0];
+                popup_6ff1cebfa668bac49d440974712e09a7.setContent(html_8b56e8edbbd9b3920d567c60108cc0f5);
+            
+        
+
+        marker_19aa907247e56daf9d484a0291a03b0d.bindPopup(popup_6ff1cebfa668bac49d440974712e09a7)
+        ;
+
+        
+    
+    
+            marker_19aa907247e56daf9d484a0291a03b0d.bindTooltip(
+                `<div>
+                     Store: Emart Gò Vấp
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_19aa907247e56daf9d484a0291a03b0d.setIcon(icon_534a197e326e30039f86b76cf28b69ad);
+            
+    
+            var marker_166f8632b9720af41b71e38b56ac9252 = L.marker(
+                [10.7409, 106.7018],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_3e64511e604c2aadd6e5e948a74edf6e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cb8b1b38019f469f258964432b84b5bc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6df2fb0bacf2a9de64ce9865c89957ec = $(`<div id="html_6df2fb0bacf2a9de64ce9865c89957ec" style="width: 100.0%; height: 100.0%;"><b>Lotte Mart Quận 7</b><br>ID: STORE0004<br>Type: Hypermarket</div>`)[0];
+                popup_cb8b1b38019f469f258964432b84b5bc.setContent(html_6df2fb0bacf2a9de64ce9865c89957ec);
+            
+        
+
+        marker_166f8632b9720af41b71e38b56ac9252.bindPopup(popup_cb8b1b38019f469f258964432b84b5bc)
+        ;
+
+        
+    
+    
+            marker_166f8632b9720af41b71e38b56ac9252.bindTooltip(
+                `<div>
+                     Store: Lotte Mart Quận 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_166f8632b9720af41b71e38b56ac9252.setIcon(icon_3e64511e604c2aadd6e5e948a74edf6e);
+            
+    
+            var marker_7cbe105a79f94eff2203fe5dac230c45 = L.marker(
+                [10.8016, 106.6174],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_d22d992db4afa5c0dc4f756d1b6663e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44f122a99b25870f75225ee6f75da5ce = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_83718b76ef2d384a2e3eee0eea22960f = $(`<div id="html_83718b76ef2d384a2e3eee0eea22960f" style="width: 100.0%; height: 100.0%;"><b>Aeon Mall Tân Phú</b><br>ID: STORE0005<br>Type: Hypermarket</div>`)[0];
+                popup_44f122a99b25870f75225ee6f75da5ce.setContent(html_83718b76ef2d384a2e3eee0eea22960f);
+            
+        
+
+        marker_7cbe105a79f94eff2203fe5dac230c45.bindPopup(popup_44f122a99b25870f75225ee6f75da5ce)
+        ;
+
+        
+    
+    
+            marker_7cbe105a79f94eff2203fe5dac230c45.bindTooltip(
+                `<div>
+                     Store: Aeon Mall Tân Phú
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7cbe105a79f94eff2203fe5dac230c45.setIcon(icon_d22d992db4afa5c0dc4f756d1b6663e9);
+            
+    
+            var marker_6c1ea514d32415dcb437628917370459 = L.marker(
+                [10.8277, 106.7216],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_4bf5a68d39ad27b2b34359c9358d31a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0709f68c3fd3552f965dbac2d0fb575f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_460b0493d6961f916f6babf18386d6c3 = $(`<div id="html_460b0493d6961f916f6babf18386d6c3" style="width: 100.0%; height: 100.0%;"><b>Gigamall Thủ Đức</b><br>ID: STORE0006<br>Type: Hypermarket</div>`)[0];
+                popup_0709f68c3fd3552f965dbac2d0fb575f.setContent(html_460b0493d6961f916f6babf18386d6c3);
+            
+        
+
+        marker_6c1ea514d32415dcb437628917370459.bindPopup(popup_0709f68c3fd3552f965dbac2d0fb575f)
+        ;
+
+        
+    
+    
+            marker_6c1ea514d32415dcb437628917370459.bindTooltip(
+                `<div>
+                     Store: Gigamall Thủ Đức
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6c1ea514d32415dcb437628917370459.setIcon(icon_4bf5a68d39ad27b2b34359c9358d31a0);
+            
+    
+            var marker_4e63de52f1db04edfb4776a98995a30d = L.marker(
+                [10.8002, 106.7432],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_b6c1a7f0500379dcc3ec8d5a35cea787 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_465b4c72e9d73546a72240b1f5d37750 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_26103c8df3034420e2a12606a5c61a2e = $(`<div id="html_26103c8df3034420e2a12606a5c61a2e" style="width: 100.0%; height: 100.0%;"><b>MM Mega Market An Phú</b><br>ID: STORE0008<br>Type: Hypermarket</div>`)[0];
+                popup_465b4c72e9d73546a72240b1f5d37750.setContent(html_26103c8df3034420e2a12606a5c61a2e);
+            
+        
+
+        marker_4e63de52f1db04edfb4776a98995a30d.bindPopup(popup_465b4c72e9d73546a72240b1f5d37750)
+        ;
+
+        
+    
+    
+            marker_4e63de52f1db04edfb4776a98995a30d.bindTooltip(
+                `<div>
+                     Store: MM Mega Market An Phú
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4e63de52f1db04edfb4776a98995a30d.setIcon(icon_b6c1a7f0500379dcc3ec8d5a35cea787);
+            
+    
+            var marker_59ba66b81ae17ff63272bcdfbc4b9884 = L.marker(
+                [10.8061, 106.6346],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_51c55817aea4f02389d05cfd1f5eae23 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a6dfbf98818554e6a2ad89bab4de4a30 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_acf370fd8acd5eafdd9120aa89a68949 = $(`<div id="html_acf370fd8acd5eafdd9120aa89a68949" style="width: 100.0%; height: 100.0%;"><b>Go! Trường Chinh</b><br>ID: STORE0011<br>Type: Hypermarket</div>`)[0];
+                popup_a6dfbf98818554e6a2ad89bab4de4a30.setContent(html_acf370fd8acd5eafdd9120aa89a68949);
+            
+        
+
+        marker_59ba66b81ae17ff63272bcdfbc4b9884.bindPopup(popup_a6dfbf98818554e6a2ad89bab4de4a30)
+        ;
+
+        
+    
+    
+            marker_59ba66b81ae17ff63272bcdfbc4b9884.bindTooltip(
+                `<div>
+                     Store: Go! Trường Chinh
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_59ba66b81ae17ff63272bcdfbc4b9884.setIcon(icon_51c55817aea4f02389d05cfd1f5eae23);
+            
+    
+            var marker_ad0fcbbe693c8ad688ed6ffaf9534832 = L.marker(
+                [10.7675, 106.6862],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_2376593536c283459b6723c44dc352c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_119b128d1f6c9fb5415a04b0016e6c5d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4690967d1d23e72feb59269e5defc7ce = $(`<div id="html_4690967d1d23e72feb59269e5defc7ce" style="width: 100.0%; height: 100.0%;"><b>Co.opmart Cống Quỳnh</b><br>ID: STORE0002<br>Type: Supermarket</div>`)[0];
+                popup_119b128d1f6c9fb5415a04b0016e6c5d.setContent(html_4690967d1d23e72feb59269e5defc7ce);
+            
+        
+
+        marker_ad0fcbbe693c8ad688ed6ffaf9534832.bindPopup(popup_119b128d1f6c9fb5415a04b0016e6c5d)
+        ;
+
+        
+    
+    
+            marker_ad0fcbbe693c8ad688ed6ffaf9534832.bindTooltip(
+                `<div>
+                     Store: Co.opmart Cống Quỳnh
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ad0fcbbe693c8ad688ed6ffaf9534832.setIcon(icon_2376593536c283459b6723c44dc352c7);
+            
+    
+            var marker_ead55bae193e76c7a4e5e60512db7619 = L.marker(
+                [10.8004, 106.6883],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_dedfae92df2fe63fd688e4bf6a3f77b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_108697f9e12bcdf5906364b034ffa2e2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6a95f6b17e7bc88a555976d8a8fb9e18 = $(`<div id="html_6a95f6b17e7bc88a555976d8a8fb9e18" style="width: 100.0%; height: 100.0%;"><b>Co.opmart Rạch Miễu</b><br>ID: STORE0003<br>Type: Supermarket</div>`)[0];
+                popup_108697f9e12bcdf5906364b034ffa2e2.setContent(html_6a95f6b17e7bc88a555976d8a8fb9e18);
+            
+        
+
+        marker_ead55bae193e76c7a4e5e60512db7619.bindPopup(popup_108697f9e12bcdf5906364b034ffa2e2)
+        ;
+
+        
+    
+    
+            marker_ead55bae193e76c7a4e5e60512db7619.bindTooltip(
+                `<div>
+                     Store: Co.opmart Rạch Miễu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ead55bae193e76c7a4e5e60512db7619.setIcon(icon_dedfae92df2fe63fd688e4bf6a3f77b4);
+            
+    
+            var marker_9474e5f8ae03a9d2beeb90187eb7c445 = L.marker(
+                [10.7946, 106.7221],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_c70f9a1defb6343944dae6c9283badc2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2bc4682e4e528686ff7f8e22b9d3906e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f869564c81b7ea9c7653c959920ff81a = $(`<div id="html_f869564c81b7ea9c7653c959920ff81a" style="width: 100.0%; height: 100.0%;"><b>WinMart Landmark 81</b><br>ID: STORE0007<br>Type: Supermarket</div>`)[0];
+                popup_2bc4682e4e528686ff7f8e22b9d3906e.setContent(html_f869564c81b7ea9c7653c959920ff81a);
+            
+        
+
+        marker_9474e5f8ae03a9d2beeb90187eb7c445.bindPopup(popup_2bc4682e4e528686ff7f8e22b9d3906e)
+        ;
+
+        
+    
+    
+            marker_9474e5f8ae03a9d2beeb90187eb7c445.bindTooltip(
+                `<div>
+                     Store: WinMart Landmark 81
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9474e5f8ae03a9d2beeb90187eb7c445.setIcon(icon_c70f9a1defb6343944dae6c9283badc2);
+            
+    
+            var marker_d39af697e9ca2ab0484be551f4a040cf = L.marker(
+                [10.7722, 106.6322],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_2eb0ad61f3bae3698cf8d7baf4999cf0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ce90f1c059a5f09b367100b8e50b3405 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_330c733da1bdaf2eacd6bb73bd2ab26c = $(`<div id="html_330c733da1bdaf2eacd6bb73bd2ab26c" style="width: 100.0%; height: 100.0%;"><b>Kho Shopee Express Tân Phú</b><br>ID: STORE0009<br>Type: E-commerce</div>`)[0];
+                popup_ce90f1c059a5f09b367100b8e50b3405.setContent(html_330c733da1bdaf2eacd6bb73bd2ab26c);
+            
+        
+
+        marker_d39af697e9ca2ab0484be551f4a040cf.bindPopup(popup_ce90f1c059a5f09b367100b8e50b3405)
+        ;
+
+        
+    
+    
+            marker_d39af697e9ca2ab0484be551f4a040cf.bindTooltip(
+                `<div>
+                     Store: Kho Shopee Express Tân Phú
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d39af697e9ca2ab0484be551f4a040cf.setIcon(icon_2eb0ad61f3bae3698cf8d7baf4999cf0);
+            
+    
+            var marker_f90ce40dff58b6886642f44c4910f074 = L.marker(
+                [10.7398, 106.696],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_a8dc89fbdd84752c541ffa521184748e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_549b7e58fccf7f8127e94deda10c79a0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_855ff7b5bd341818ccd76f92be70d6b2 = $(`<div id="html_855ff7b5bd341818ccd76f92be70d6b2" style="width: 100.0%; height: 100.0%;"><b>Kho J&T Express Q.7</b><br>ID: STORE0010<br>Type: E-commerce</div>`)[0];
+                popup_549b7e58fccf7f8127e94deda10c79a0.setContent(html_855ff7b5bd341818ccd76f92be70d6b2);
+            
+        
+
+        marker_f90ce40dff58b6886642f44c4910f074.bindPopup(popup_549b7e58fccf7f8127e94deda10c79a0)
+        ;
+
+        
+    
+    
+            marker_f90ce40dff58b6886642f44c4910f074.bindTooltip(
+                `<div>
+                     Store: Kho J&T Express Q.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f90ce40dff58b6886642f44c4910f074.setIcon(icon_a8dc89fbdd84752c541ffa521184748e);
+            
+    
+            var marker_7e299a8252d735d5a5c4719ef4f719cb = L.marker(
+                [10.7989, 106.6684],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_8b133bad3209ce6c2660c41c5f7a153a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_06c0edd23307fc284fa6ea4c99f553c2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_89ce49bdb07c811842c728920693487e = $(`<div id="html_89ce49bdb07c811842c728920693487e" style="width: 100.0%; height: 100.0%;"><b>Kho Ninja Van Tân Bình</b><br>ID: STORE0012<br>Type: E-commerce</div>`)[0];
+                popup_06c0edd23307fc284fa6ea4c99f553c2.setContent(html_89ce49bdb07c811842c728920693487e);
+            
+        
+
+        marker_7e299a8252d735d5a5c4719ef4f719cb.bindPopup(popup_06c0edd23307fc284fa6ea4c99f553c2)
+        ;
+
+        
+    
+    
+            marker_7e299a8252d735d5a5c4719ef4f719cb.bindTooltip(
+                `<div>
+                     Store: Kho Ninja Van Tân Bình
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7e299a8252d735d5a5c4719ef4f719cb.setIcon(icon_8b133bad3209ce6c2660c41c5f7a153a);
+            
+    
+            var marker_b42602a62e07183f942a93cba5a317c3 = L.marker(
+                [10.7636, 106.6929],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_c822ff842b1ef631014f483ed4b5d713 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa26ff31a141ca474208142e0f76317a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9a88eb5554a03bfae64075566a82fe53 = $(`<div id="html_9a88eb5554a03bfae64075566a82fe53" style="width: 100.0%; height: 100.0%;"><b>Circle K Nguyễn Khắc Nhu</b><br>ID: STORE0013_01<br>Type: Convenience</div>`)[0];
+                popup_aa26ff31a141ca474208142e0f76317a.setContent(html_9a88eb5554a03bfae64075566a82fe53);
+            
+        
+
+        marker_b42602a62e07183f942a93cba5a317c3.bindPopup(popup_aa26ff31a141ca474208142e0f76317a)
+        ;
+
+        
+    
+    
+            marker_b42602a62e07183f942a93cba5a317c3.bindTooltip(
+                `<div>
+                     Store: Circle K Nguyễn Khắc Nhu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b42602a62e07183f942a93cba5a317c3.setIcon(icon_c822ff842b1ef631014f483ed4b5d713);
+            
+    
+            var marker_6dba1ac88ff05d4a624ac84225b40fea = L.marker(
+                [10.7646, 106.6876],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_9502cfdef53e90ce9d241af8704012cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46b706624fc76a7757d0d159d2f51e6d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f0e78fea4ecbe991e8522936d8b84092 = $(`<div id="html_f0e78fea4ecbe991e8522936d8b84092" style="width: 100.0%; height: 100.0%;"><b>Circle K Nguyễn Trãi</b><br>ID: STORE0013_02<br>Type: Convenience</div>`)[0];
+                popup_46b706624fc76a7757d0d159d2f51e6d.setContent(html_f0e78fea4ecbe991e8522936d8b84092);
+            
+        
+
+        marker_6dba1ac88ff05d4a624ac84225b40fea.bindPopup(popup_46b706624fc76a7757d0d159d2f51e6d)
+        ;
+
+        
+    
+    
+            marker_6dba1ac88ff05d4a624ac84225b40fea.bindTooltip(
+                `<div>
+                     Store: Circle K Nguyễn Trãi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6dba1ac88ff05d4a624ac84225b40fea.setIcon(icon_9502cfdef53e90ce9d241af8704012cc);
+            
+    
+            var marker_88b00e9a24711f4bf7aaab8a81ec4683 = L.marker(
+                [10.7664, 106.6961],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_6ec3ffd820e6e95bfaf5d69c4341e365 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_23e23c8a62a7f11226f3a8adf0a4e3e1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_94fbb5734ff952bc3ae8edf6a26f0305 = $(`<div id="html_94fbb5734ff952bc3ae8edf6a26f0305" style="width: 100.0%; height: 100.0%;"><b>Circle K Nguyễn Thái Học</b><br>ID: STORE0013_03<br>Type: Convenience</div>`)[0];
+                popup_23e23c8a62a7f11226f3a8adf0a4e3e1.setContent(html_94fbb5734ff952bc3ae8edf6a26f0305);
+            
+        
+
+        marker_88b00e9a24711f4bf7aaab8a81ec4683.bindPopup(popup_23e23c8a62a7f11226f3a8adf0a4e3e1)
+        ;
+
+        
+    
+    
+            marker_88b00e9a24711f4bf7aaab8a81ec4683.bindTooltip(
+                `<div>
+                     Store: Circle K Nguyễn Thái Học
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_88b00e9a24711f4bf7aaab8a81ec4683.setIcon(icon_6ec3ffd820e6e95bfaf5d69c4341e365);
+            
+    
+            var marker_b1673e500b05ed6d91a7b8f9e6f7dc65 = L.marker(
+                [1.0768, 106.6921],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_7cacf7e28eb097331c315f1125c56c88 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_048fd132c8c52158795a11bf90fe754a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fdba4402e814307646f308be459e3f2c = $(`<div id="html_fdba4402e814307646f308be459e3f2c" style="width: 100.0%; height: 100.0%;"><b>Circle K Phạm Ngũ Lão</b><br>ID: STORE0013_04<br>Type: Convenience</div>`)[0];
+                popup_048fd132c8c52158795a11bf90fe754a.setContent(html_fdba4402e814307646f308be459e3f2c);
+            
+        
+
+        marker_b1673e500b05ed6d91a7b8f9e6f7dc65.bindPopup(popup_048fd132c8c52158795a11bf90fe754a)
+        ;
+
+        
+    
+    
+            marker_b1673e500b05ed6d91a7b8f9e6f7dc65.bindTooltip(
+                `<div>
+                     Store: Circle K Phạm Ngũ Lão
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b1673e500b05ed6d91a7b8f9e6f7dc65.setIcon(icon_7cacf7e28eb097331c315f1125c56c88);
+            
+    
+            var marker_6047b50d9fd7937c74897d6588375f51 = L.marker(
+                [10.7699, 106.6923],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_35853e89232d59e1095c6d4b964f7a49 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf1545c3b36d3cb3b1a4dc12bb490125 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_df055719ae2f697141cdbb3a96a06f2c = $(`<div id="html_df055719ae2f697141cdbb3a96a06f2c" style="width: 100.0%; height: 100.0%;"><b>Circle K Nguyễn Văn Tráng</b><br>ID: STORE0013_05<br>Type: Convenience</div>`)[0];
+                popup_bf1545c3b36d3cb3b1a4dc12bb490125.setContent(html_df055719ae2f697141cdbb3a96a06f2c);
+            
+        
+
+        marker_6047b50d9fd7937c74897d6588375f51.bindPopup(popup_bf1545c3b36d3cb3b1a4dc12bb490125)
+        ;
+
+        
+    
+    
+            marker_6047b50d9fd7937c74897d6588375f51.bindTooltip(
+                `<div>
+                     Store: Circle K Nguyễn Văn Tráng
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6047b50d9fd7937c74897d6588375f51.setIcon(icon_35853e89232d59e1095c6d4b964f7a49);
+            
+    
+            var marker_ec2e63f98267399e8064d65c8336db73 = L.marker(
+                [10.7896, 106.6859],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_42e17ff27429d35ed30a184928153250 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fb906cdf3e3c00428541fd5ec99e726f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8094f8c3ad7be1ddab8b3e25734e6b75 = $(`<div id="html_8094f8c3ad7be1ddab8b3e25734e6b75" style="width: 100.0%; height: 100.0%;"><b>FamilyMart Lý Chính Thắng</b><br>ID: STORE0013_06<br>Type: Convenience</div>`)[0];
+                popup_fb906cdf3e3c00428541fd5ec99e726f.setContent(html_8094f8c3ad7be1ddab8b3e25734e6b75);
+            
+        
+
+        marker_ec2e63f98267399e8064d65c8336db73.bindPopup(popup_fb906cdf3e3c00428541fd5ec99e726f)
+        ;
+
+        
+    
+    
+            marker_ec2e63f98267399e8064d65c8336db73.bindTooltip(
+                `<div>
+                     Store: FamilyMart Lý Chính Thắng
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ec2e63f98267399e8064d65c8336db73.setIcon(icon_42e17ff27429d35ed30a184928153250);
+            
+    
+            var marker_0829088a5973be8cd0d23203e0d36310 = L.marker(
+                [10.7768, 106.6903],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_37c04de96a94fe056c963ddccfc1631a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6cad0da965d2f63196ecb8fd39ef0af6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_32123b1bf46dbbef66ae4a0c9f22507f = $(`<div id="html_32123b1bf46dbbef66ae4a0c9f22507f" style="width: 100.0%; height: 100.0%;"><b>FamilyMart Võ Văn Tần</b><br>ID: STORE0013_07<br>Type: Convenience</div>`)[0];
+                popup_6cad0da965d2f63196ecb8fd39ef0af6.setContent(html_32123b1bf46dbbef66ae4a0c9f22507f);
+            
+        
+
+        marker_0829088a5973be8cd0d23203e0d36310.bindPopup(popup_6cad0da965d2f63196ecb8fd39ef0af6)
+        ;
+
+        
+    
+    
+            marker_0829088a5973be8cd0d23203e0d36310.bindTooltip(
+                `<div>
+                     Store: FamilyMart Võ Văn Tần
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0829088a5973be8cd0d23203e0d36310.setIcon(icon_37c04de96a94fe056c963ddccfc1631a);
+            
+    
+            var marker_b400bfd7d77fa43b79651fd3335fc0e6 = L.marker(
+                [10.7733, 106.685],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_bbc709bffa02a338ee30bfe5087f5c9f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_76d5480d5df578e50fdc1432d39564ea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0991ffd2cd50b8a0c23029bdf5b68c7e = $(`<div id="html_0991ffd2cd50b8a0c23029bdf5b68c7e" style="width: 100.0%; height: 100.0%;"><b>FamilyMart Nguyễn Đình Chiểu</b><br>ID: STORE0013_08<br>Type: Convenience</div>`)[0];
+                popup_76d5480d5df578e50fdc1432d39564ea.setContent(html_0991ffd2cd50b8a0c23029bdf5b68c7e);
+            
+        
+
+        marker_b400bfd7d77fa43b79651fd3335fc0e6.bindPopup(popup_76d5480d5df578e50fdc1432d39564ea)
+        ;
+
+        
+    
+    
+            marker_b400bfd7d77fa43b79651fd3335fc0e6.bindTooltip(
+                `<div>
+                     Store: FamilyMart Nguyễn Đình Chiểu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b400bfd7d77fa43b79651fd3335fc0e6.setIcon(icon_bbc709bffa02a338ee30bfe5087f5c9f);
+            
+    
+            var marker_583079e27b7c2b0f56366f77ab31a60c = L.marker(
+                [10.7874, 106.6847],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_3e911f0926335161970cc560e0ce234f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_370d0b18693afbb1a22e293acdd5babc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_be6a80445cea77213c23667d70754dd0 = $(`<div id="html_be6a80445cea77213c23667d70754dd0" style="width: 100.0%; height: 100.0%;"><b>FamilyMart Lý Chính Thắng</b><br>ID: STORE0013_09<br>Type: Convenience</div>`)[0];
+                popup_370d0b18693afbb1a22e293acdd5babc.setContent(html_be6a80445cea77213c23667d70754dd0);
+            
+        
+
+        marker_583079e27b7c2b0f56366f77ab31a60c.bindPopup(popup_370d0b18693afbb1a22e293acdd5babc)
+        ;
+
+        
+    
+    
+            marker_583079e27b7c2b0f56366f77ab31a60c.bindTooltip(
+                `<div>
+                     Store: FamilyMart Lý Chính Thắng
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_583079e27b7c2b0f56366f77ab31a60c.setIcon(icon_3e911f0926335161970cc560e0ce234f);
+            
+    
+            var marker_addbeebd7a06503bdb314625903c04cc = L.marker(
+                [1.0783, 106.6941],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_ee87acb8fcb1dc1fa97959a84f179235 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_606e36f45cb1f97f2b9852f536753d03 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8d8e24ebfe87ef8af4f173a3cc4dceb0 = $(`<div id="html_8d8e24ebfe87ef8af4f173a3cc4dceb0" style="width: 100.0%; height: 100.0%;"><b>FamilyMart Nguyễn Đình Chiểu</b><br>ID: STORE0013_10<br>Type: Convenience</div>`)[0];
+                popup_606e36f45cb1f97f2b9852f536753d03.setContent(html_8d8e24ebfe87ef8af4f173a3cc4dceb0);
+            
+        
+
+        marker_addbeebd7a06503bdb314625903c04cc.bindPopup(popup_606e36f45cb1f97f2b9852f536753d03)
+        ;
+
+        
+    
+    
+            marker_addbeebd7a06503bdb314625903c04cc.bindTooltip(
+                `<div>
+                     Store: FamilyMart Nguyễn Đình Chiểu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_addbeebd7a06503bdb314625903c04cc.setIcon(icon_ee87acb8fcb1dc1fa97959a84f179235);
+            
+    
+            var marker_18ff2c5fcf723c74ad52ef935545f998 = L.marker(
+                [10.7596, 106.6987],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_671dc325d56438b7e8359dd56389ddfe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f20a45ffde257736a6bdf4c7dd06c0de = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2819f4473a58f768a61d74c576e90adb = $(`<div id="html_2819f4473a58f768a61d74c576e90adb" style="width: 100.0%; height: 100.0%;"><b>GS25 Khánh Hội</b><br>ID: STORE0013_11<br>Type: Convenience</div>`)[0];
+                popup_f20a45ffde257736a6bdf4c7dd06c0de.setContent(html_2819f4473a58f768a61d74c576e90adb);
+            
+        
+
+        marker_18ff2c5fcf723c74ad52ef935545f998.bindPopup(popup_f20a45ffde257736a6bdf4c7dd06c0de)
+        ;
+
+        
+    
+    
+            marker_18ff2c5fcf723c74ad52ef935545f998.bindTooltip(
+                `<div>
+                     Store: GS25 Khánh Hội
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_18ff2c5fcf723c74ad52ef935545f998.setIcon(icon_671dc325d56438b7e8359dd56389ddfe);
+            
+    
+            var marker_b2eb212aa88f19e4b8caf04ba60f39c5 = L.marker(
+                [10.7669, 106.7039],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_16935116c2c67676f243ebd2e7cf8fa0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_69916f736a0b4046acbd34a2c209f6bc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4fe7c1758a70ffcf2f758eeb185342c9 = $(`<div id="html_4fe7c1758a70ffcf2f758eeb185342c9" style="width: 100.0%; height: 100.0%;"><b>GS25 Bến Vân Đồn</b><br>ID: STORE0013_12<br>Type: Convenience</div>`)[0];
+                popup_69916f736a0b4046acbd34a2c209f6bc.setContent(html_4fe7c1758a70ffcf2f758eeb185342c9);
+            
+        
+
+        marker_b2eb212aa88f19e4b8caf04ba60f39c5.bindPopup(popup_69916f736a0b4046acbd34a2c209f6bc)
+        ;
+
+        
+    
+    
+            marker_b2eb212aa88f19e4b8caf04ba60f39c5.bindTooltip(
+                `<div>
+                     Store: GS25 Bến Vân Đồn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b2eb212aa88f19e4b8caf04ba60f39c5.setIcon(icon_16935116c2c67676f243ebd2e7cf8fa0);
+            
+    
+            var marker_6411bf544818a991bfa50371d36ab0d1 = L.marker(
+                [10.7624, 106.6991],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_16625e42142e3752686dcad9256f313d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_765da44210bb1061ebf108e084a1e789 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_400ab38e77882c2ea55c608fd8c31007 = $(`<div id="html_400ab38e77882c2ea55c608fd8c31007" style="width: 100.0%; height: 100.0%;"><b>GS25 Bến Vân Đồn</b><br>ID: STORE0013_13<br>Type: Convenience</div>`)[0];
+                popup_765da44210bb1061ebf108e084a1e789.setContent(html_400ab38e77882c2ea55c608fd8c31007);
+            
+        
+
+        marker_6411bf544818a991bfa50371d36ab0d1.bindPopup(popup_765da44210bb1061ebf108e084a1e789)
+        ;
+
+        
+    
+    
+            marker_6411bf544818a991bfa50371d36ab0d1.bindTooltip(
+                `<div>
+                     Store: GS25 Bến Vân Đồn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6411bf544818a991bfa50371d36ab0d1.setIcon(icon_16625e42142e3752686dcad9256f313d);
+            
+    
+            var marker_292521d9793cb842195311ebce933f2f = L.marker(
+                [10.7588, 106.7067],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_10083c03a6925d18ecca37be437b553a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e9e8fce0f3cc162658a67bbd5285d0e7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_956e3f0530faed046189d8ee28ac46fc = $(`<div id="html_956e3f0530faed046189d8ee28ac46fc" style="width: 100.0%; height: 100.0%;"><b>GS25 Tôn Đản</b><br>ID: STORE0013_14<br>Type: Convenience</div>`)[0];
+                popup_e9e8fce0f3cc162658a67bbd5285d0e7.setContent(html_956e3f0530faed046189d8ee28ac46fc);
+            
+        
+
+        marker_292521d9793cb842195311ebce933f2f.bindPopup(popup_e9e8fce0f3cc162658a67bbd5285d0e7)
+        ;
+
+        
+    
+    
+            marker_292521d9793cb842195311ebce933f2f.bindTooltip(
+                `<div>
+                     Store: GS25 Tôn Đản
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_292521d9793cb842195311ebce933f2f.setIcon(icon_10083c03a6925d18ecca37be437b553a);
+            
+    
+            var marker_8aae21954f1afaf8f21d7a96e30e3c3a = L.marker(
+                [10.7588, 106.7006],
+                {
+}
+            ).addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+            var icon_f741dbb9a4cab2cdd4d2afa3121f27f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f156294dcf8270c38b36a04255bf50c9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a93e06e6d417a5f03ad265257984c54d = $(`<div id="html_a93e06e6d417a5f03ad265257984c54d" style="width: 100.0%; height: 100.0%;"><b>GS25 Đường Số 41 Q4</b><br>ID: STORE0013_15<br>Type: Convenience</div>`)[0];
+                popup_f156294dcf8270c38b36a04255bf50c9.setContent(html_a93e06e6d417a5f03ad265257984c54d);
+            
+        
+
+        marker_8aae21954f1afaf8f21d7a96e30e3c3a.bindPopup(popup_f156294dcf8270c38b36a04255bf50c9)
+        ;
+
+        
+    
+    
+            marker_8aae21954f1afaf8f21d7a96e30e3c3a.bindTooltip(
+                `<div>
+                     Store: GS25 Đường Số 41 Q4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8aae21954f1afaf8f21d7a96e30e3c3a.setIcon(icon_f741dbb9a4cab2cdd4d2afa3121f27f2);
+            
+    
+            tile_layer_0a67ae1054e90d4d7b1e71b3cace8a1f.addTo(map_d1d5bbd57cbbd0f1ddee36cc810c5b2c);
+        
+    
+                marker_c320309a815bcf0f74e84275cc54680b.setIcon(icon_b0e18541f899325e24b088467929c9a1);
+            
+    
+                marker_dfd509909b6da479a2c05f8952f4541a.setIcon(icon_294381f0e4925bb4d0bd77c6a4a5ba7c);
+            
+    
+                marker_a228b446fdcb3d077879f534344ee375.setIcon(icon_de3315ff55bc5d1462938c1f17c61a36);
+            
+    
+                marker_19aa907247e56daf9d484a0291a03b0d.setIcon(icon_534a197e326e30039f86b76cf28b69ad);
+            
+    
+                marker_166f8632b9720af41b71e38b56ac9252.setIcon(icon_3e64511e604c2aadd6e5e948a74edf6e);
+            
+    
+                marker_7cbe105a79f94eff2203fe5dac230c45.setIcon(icon_d22d992db4afa5c0dc4f756d1b6663e9);
+            
+    
+                marker_6c1ea514d32415dcb437628917370459.setIcon(icon_4bf5a68d39ad27b2b34359c9358d31a0);
+            
+    
+                marker_4e63de52f1db04edfb4776a98995a30d.setIcon(icon_b6c1a7f0500379dcc3ec8d5a35cea787);
+            
+    
+                marker_59ba66b81ae17ff63272bcdfbc4b9884.setIcon(icon_51c55817aea4f02389d05cfd1f5eae23);
+            
+    
+                marker_ad0fcbbe693c8ad688ed6ffaf9534832.setIcon(icon_2376593536c283459b6723c44dc352c7);
+            
+    
+                marker_ead55bae193e76c7a4e5e60512db7619.setIcon(icon_dedfae92df2fe63fd688e4bf6a3f77b4);
+            
+    
+                marker_9474e5f8ae03a9d2beeb90187eb7c445.setIcon(icon_c70f9a1defb6343944dae6c9283badc2);
+            
+    
+                marker_d39af697e9ca2ab0484be551f4a040cf.setIcon(icon_2eb0ad61f3bae3698cf8d7baf4999cf0);
+            
+    
+                marker_f90ce40dff58b6886642f44c4910f074.setIcon(icon_a8dc89fbdd84752c541ffa521184748e);
+            
+    
+                marker_7e299a8252d735d5a5c4719ef4f719cb.setIcon(icon_8b133bad3209ce6c2660c41c5f7a153a);
+            
+    
+                marker_b42602a62e07183f942a93cba5a317c3.setIcon(icon_c822ff842b1ef631014f483ed4b5d713);
+            
+    
+                marker_6dba1ac88ff05d4a624ac84225b40fea.setIcon(icon_9502cfdef53e90ce9d241af8704012cc);
+            
+    
+                marker_88b00e9a24711f4bf7aaab8a81ec4683.setIcon(icon_6ec3ffd820e6e95bfaf5d69c4341e365);
+            
+    
+                marker_b1673e500b05ed6d91a7b8f9e6f7dc65.setIcon(icon_7cacf7e28eb097331c315f1125c56c88);
+            
+    
+                marker_6047b50d9fd7937c74897d6588375f51.setIcon(icon_35853e89232d59e1095c6d4b964f7a49);
+            
+    
+                marker_ec2e63f98267399e8064d65c8336db73.setIcon(icon_42e17ff27429d35ed30a184928153250);
+            
+    
+                marker_0829088a5973be8cd0d23203e0d36310.setIcon(icon_37c04de96a94fe056c963ddccfc1631a);
+            
+    
+                marker_b400bfd7d77fa43b79651fd3335fc0e6.setIcon(icon_bbc709bffa02a338ee30bfe5087f5c9f);
+            
+    
+                marker_583079e27b7c2b0f56366f77ab31a60c.setIcon(icon_3e911f0926335161970cc560e0ce234f);
+            
+    
+                marker_addbeebd7a06503bdb314625903c04cc.setIcon(icon_ee87acb8fcb1dc1fa97959a84f179235);
+            
+    
+                marker_18ff2c5fcf723c74ad52ef935545f998.setIcon(icon_671dc325d56438b7e8359dd56389ddfe);
+            
+    
+                marker_b2eb212aa88f19e4b8caf04ba60f39c5.setIcon(icon_16935116c2c67676f243ebd2e7cf8fa0);
+            
+    
+                marker_6411bf544818a991bfa50371d36ab0d1.setIcon(icon_16625e42142e3752686dcad9256f313d);
+            
+    
+                marker_292521d9793cb842195311ebce933f2f.setIcon(icon_10083c03a6925d18ecca37be437b553a);
+            
+    
+                marker_8aae21954f1afaf8f21d7a96e30e3c3a.setIcon(icon_f741dbb9a4cab2cdd4d2afa3121f27f2);
+            
+</script>
+</html>

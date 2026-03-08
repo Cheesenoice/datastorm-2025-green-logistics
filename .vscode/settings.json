@@ -1,0 +1,8 @@
+{
+  "chat.tools.terminal.autoApprove": {
+    "/^\\$jsonPath='c:\\\\Users\\\\TRIDELL\\\\Desktop\\\\Datastorm\\\\Datastorm2-round2\\\\datastorm_round_2_green_logistics\\\\data\\\\03_output\\\\optimized_routes_final\\.json'; \\$obj=Get-Content \\$jsonPath -Raw \\| ConvertFrom-Json; \\$tripCount=\\$obj\\.Count; \\$totalKm=\\[Math\\]::Round\\(\\(\\(\\$obj \\| Measure-Object -Property total_km -Sum\\)\\.Sum\\),2\\); \\$avgKm=\\[Math\\]::Round\\(\\(\\(\\$obj \\| Measure-Object -Property total_km -Average\\)\\.Average\\),2\\); \\$minBattery=\\(\\$obj \\| Measure-Object -Property start_battery -Minimum\\)\\.Minimum; \\$maxBattery=\\(\\$obj \\| Measure-Object -Property start_battery -Maximum\\)\\.Maximum; \\$minLoad=\\(\\$obj \\| Measure-Object -Property load -Minimum\\)\\.Minimum; \\$maxLoad=\\(\\$obj \\| Measure-Object -Property load -Maximum\\)\\.Maximum; \"TRIP_COUNT=\\$tripCount\"; \"TOTAL_KM=\\$totalKm\"; \"AVG_KM_PER_TRIP=\\$avgKm\"; \"START_BATTERY_RANGE=\\$minBattery-\\$maxBattery\"; \"LOAD_RANGE=\\$minLoad-\\$maxLoad\"; \\$obj \\| Select-Object -First 3 \\| ForEach-Object \\{ \"SAMPLE_TRIP=\\$\\(\\$_\\.trip_id\\) VEHICLE=\\$\\(\\$_\\.vehicle_id\\) KM=\\$\\(\\$_\\.total_km\\) START=\\$\\(\\$_\\.start_time\\) END=\\$\\(\\$_\\.end_time\\)\" \\}$/": {
+      "approve": true,
+      "matchCommandLine": true
+    }
+  }
+}
