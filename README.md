@@ -55,10 +55,7 @@ _Digital twin view: mapped stores, depot territories, and network structure for 
 - Inserts charging interventions when trips are not energy-safe.
 - Exports final operation plans and interactive visual outputs.
 
-| Decision Engine Logic                                  |
-| ------------------------------------------------------ |
-| ![Decision Engine Logic](github-assets/logic-flow.png) |
-
+<img src="github-assets/logic-flow.png" alt="Decision Engine Logic" width="60%" />
 _Operational logic: route generation, battery risk check, and charging intervention strategies._
 
 ## Competition Results
