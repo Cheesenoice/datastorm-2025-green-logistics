@@ -2,6 +2,8 @@
 
 AI-powered EV route optimization for urban FMCG delivery in Ho Chi Minh City.
 
+**YouTube Demo:** https://youtu.be/zgvR39K6_rE
+
 **Achievement:** Consolation Prize (Khuyen khich), Vietnam Datathon 2025 - DataStorm.
 
 ## Project Story
@@ -53,7 +55,10 @@ _Digital twin view: mapped stores, depot territories, and network structure for 
 - Inserts charging interventions when trips are not energy-safe.
 - Exports final operation plans and interactive visual outputs.
 
-![Decision Engine Logic](github-assets/logic-flow.png)
+| Decision Engine Logic                                  |
+| ------------------------------------------------------ |
+| ![Decision Engine Logic](github-assets/logic-flow.png) |
+
 _Operational logic: route generation, battery risk check, and charging intervention strategies._
 
 ## Competition Results
@@ -124,8 +129,8 @@ From repository output artifacts:
 
 - Google Drive folder: https://drive.google.com/drive/folders/1oteX3fA6EAeXzRPInSOMG__pXt0SI9Y9?usp=sharing
 - Files to download:
-	- `ev_stations.csv`
-	- `fmcg_sales.csv`
+  - `ev_stations.csv`
+  - `fmcg_sales.csv`
 
 ## Suggested Extra Images for GitHub
 
